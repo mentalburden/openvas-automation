@@ -11,7 +11,7 @@ rm livehosts.txt
 
 echo "building tasks in openvas"
 #Could do this inside of python script with asyncio, but xargs works for now
-cat livehosts-loaded.txt | xargs -L 1 -I {} ./LoadTurret.py -i {} -n "{}" -c "test comment"
+cat livehosts-loaded.txt | xargs -L 1 -I {} ./Loadyboi.py -i {} -n "{}" -c "test comment"
 rm livehosts-loaded.txt
 
 
